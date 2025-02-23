@@ -1,0 +1,11 @@
+{%extends "omg_djangos/base.html"%}
+
+{% block content %}
+    <ul>
+        {%for topic in topics%}
+        <li>{{topic}}</li>
+        {% empty %}
+            <li>Não há topicos no banco de dados</li>
+        {%endfor%}
+    </ul>
+{% endblock content%}
