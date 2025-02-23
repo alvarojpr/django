@@ -1,0 +1,18 @@
+-pip install Django (depois de criar e rodar o venv)
+-django-admin --version
+-django-admin startproject nome_projeto .
+-python .\manage.py runserver (rodar o server)
+
+-python .\manage.py startapp nome_projetos (iniciar um novo app). ir em settings, intalled_apps e acrescentar o no app.
+
+-python .\manage.py makemigrations nome_projetos (dar o comando abaixo depois)
+-python manage.py migrate (criar banco de dados db.sqlite3)
+
+-python .\manage.py runserver (rodar o server)
+
+
+-python .\manage.py createsuperuser (cria um login para gerenciar o db /admin/ )
+
+
+############################################################################################################################################
+
