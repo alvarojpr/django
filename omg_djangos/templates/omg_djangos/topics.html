@@ -1,12 +1,16 @@
-{%extends "omg_djangos/base.html"%}
+{% extends "omg_djangos/base.html" %}
 
 {% block content %}
     Tópicos:
     <ul>
         {%for topic in topics%}
-        <li>{{topic}}</li>
+        <li>
+            <a href="{% url 'topic' topic.id %}">{{topic}}</a>
+        </li>
         {% empty %}
             <li>Não há topicos no banco de dados</li>
         {%endfor%}
     </ul>
+
+    <a href="{% url 'new_topic' %}">Adicionar um novo tópico</a>
 {% endblock content%}

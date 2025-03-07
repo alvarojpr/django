@@ -8,11 +8,11 @@
 -python .\manage.py makemigrations nome_projetos (dar o comando abaixo depois)
 -python manage.py migrate (criar banco de dados db.sqlite3)
 
--python .\manage.py runserver (rodar o server)
-
-
 -python .\manage.py createsuperuser (cria um login para gerenciar o db /admin/ )
 
 
 ############################################################################################################################################
-
+<form action="" method="post">
+    {%csrf_token %} 
+    {{ form.as_p }}
+</form>
